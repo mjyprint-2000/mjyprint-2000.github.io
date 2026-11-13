@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;800&display=swap');
+:root{--gold:#e7c26b;--gold2:#b8862e;--bg:#0c0b0a;--card:#16130f;--text:#f3ede2;--muted:#b9ad97}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Alexandria',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+a{color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid #2a241b;background:linear-gradient(180deg,#14110d,#0c0b0a)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.2rem}
+.brand img{width:48px;height:48px;border-radius:50%}
+nav a{margin-inline-start:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.hero{padding:70px 0 40px;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);font-weight:800;background:linear-gradient(180deg,#fff4c2,#e7b54a 60%,#b8862e);-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:640px;margin:14px auto 0;font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0}
+.card{background:var(--card);border:1px solid #2a241b;border-radius:16px;padding:22px}
+.card h3{color:var(--gold);margin-bottom:6px;font-size:1.05rem}
+section{padding:26px 0}
+section h2{color:var(--gold);font-size:1.5rem;margin-bottom:10px}
+section h3{margin:18px 0 6px}
+ul{padding-inline-start:22px}
+.en{direction:ltr;text-align:left;border-top:1px solid #2a241b;margin-top:30px;padding-top:30px}
+.btn{display:inline-block;margin:6px;padding:12px 26px;border-radius:40px;text-decoration:none;font-weight:600}
+.btn.wa{background:#25D366;color:#06210f}
+.btn.out{border:1px solid var(--gold);color:var(--gold)}
+footer{border-top:1px solid #2a241b;color:var(--muted);text-align:center;padding:26px 0;margin-top:40px;font-size:.9rem}
+@media (max-width:600px){nav a{margin-inline-start:10px;font-size:.85rem}}
